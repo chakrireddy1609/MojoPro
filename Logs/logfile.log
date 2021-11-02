@@ -1,3 +1,5 @@
 2021-11-02 16:42:18,812 :INFO : test_createclient :55
 2021-11-02 16:43:27,526 :INFO : test_createclient :<selenium.webdriver.remote.webelement.WebElement (session="c4fc06ec8c09ad9334d9d96ddb472a51", element="35eb13e7-9f27-4f83-953f-72b5968ecbe8")>
 2021-11-02 16:43:34,866 :INFO : test_createclient :56
+2021-11-02 17:03:39,478 :INFO : test_createclient :
+2021-11-02 17:03:45,477 :INFO : test_createclient :57

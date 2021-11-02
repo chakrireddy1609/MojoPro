@@ -5,13 +5,14 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 from Tests.BaseTest import BaseTest
+from Utils import TestData
 
 
 class Test_CreateClient(BaseTest):
     def test_createclient(self):
         log = self.getLogger()
-        self.driver.find_element(By.XPATH, "//input[@data-placeholder='Email']").send_keys("ripple@joveo.com")
-        self.driver.find_element(By.XPATH, "//input[@data-placeholder='Password']").send_keys("ripple")
+        self.driver.find_element(By.XPATH, "//input[@data-placeholder='Email']").send_keys(TestData.username)
+        self.driver.find_element(By.XPATH, "//input[@data-placeholder='Password']").send_keys(TestData.password)
         self.driver.find_element(By.XPATH, "//button[@type='submit']").click()
         time.sleep(2)
         self.driver.find_element(By.XPATH, "//span[normalize-space()='Add Client']").click()

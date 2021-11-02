@@ -5,6 +5,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager, IEDriverManager
 
+from Utils import TestData
+
 
 def pytest_addoption(parser):
     parser.addoption(
@@ -21,7 +23,7 @@ def setup(request):
     elif browser_name == "firefox":
         service = Service(GeckoDriverManager.install())
         driver = webdriver.Firefox(service=service)
-    driver.get("https://mojo2.staging.joveo.com/login")
+    driver.get(TestData.URL)
     request.cls.driver = driver
     yield
     driver.close()

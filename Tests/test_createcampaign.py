@@ -17,7 +17,7 @@ class Test_CreateCampaign(BaseTest):
         self.driver.find_element(By.XPATH, "//a[@data-id='6b5e22dd-e32a-405f-b775-f0fdf54af547']").click()
         time.sleep(2)
         self.driver.find_element(By.XPATH, "//span[normalize-space()='Add Campaign']").click()
-        self.driver.find_element(By.XPATH, "//input[@data-placeholder='Campaign Name*']").send_keys("ClientAuto_" + str(uuid4()))
+        self.driver.find_element(By.XPATH, "//input[@data-placeholder='Campaign Name*']").send_keys("CampaignAuto_" + str(uuid4()))
         self.driver.find_element(By.XPATH, "//input[@data-placeholder='Budget']").send_keys("5")
         self.driver.find_element(By.XPATH, "//input[@data-placeholder='Campaign End Date*']").click()
         self.driver.find_element(By.XPATH, "//div[text()=' 30 ']").click()

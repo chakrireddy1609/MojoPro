@@ -1,8 +1,6 @@
 import time
 from uuid import uuid4
-
 from selenium.webdriver.common.by import By
-
 from Tests.BaseTest import BaseTest
 from Utils import TestData
 

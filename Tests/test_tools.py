@@ -39,7 +39,7 @@ class Test_Tools(BaseTest):
         self.driver.find_element(By.XPATH, "//mat-icon[normalize-space()='build']").click()
         self.driver.find_element(By.XPATH, "//span[normalize-space()='Publisher Management']").click()
         wait.until(expected_conditions.visibility_of_element_located((By.XPATH, "//h2[text()='Publishers']")))
-        time.sleep(2)
+        time.sleep(3)
         self.driver.find_element(By.XPATH, "//mat-icon[normalize-space()='build']").click()
         self.driver.find_element(By.XPATH, "//span[normalize-space()='CD User Management']").click()
         time.sleep(1)

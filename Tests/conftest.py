@@ -5,8 +5,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
-
-
 from Utils import TestData
 
 
@@ -56,7 +54,6 @@ def pytest_runtest_makereport(item):
                 html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
                            'onclick="window.open(this.src)" align="right"/></div>' % file_name
                 extra.append(pytest_html.extras.html(html))
-
 
         report.extra = extra
 
